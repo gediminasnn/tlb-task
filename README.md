@@ -1,6 +1,4 @@
-
-##tlb-task
-
+# tlb-task
 Simple `/api/users` POST endpoint made for a job interview.
 
 ## Setup
@@ -81,4 +79,11 @@ Response body should be :
         ]
     }   
 
-Have fun!
+
+## Testing
+
+There is a test case for `/api/users` endpoint
+
+To run it execute this command
+
+    php bin/phpunit
