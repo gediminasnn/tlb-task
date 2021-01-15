@@ -36,6 +36,22 @@ symfony serve (-d)
 (If this is your first time using this command, you may see an
 error that you need to run `symfony server:ca:install` first).
 
-Now you can run users POST endpoint with request body in it `https://localhost:8000/api/users`
+Now you can run users POST endpoint with request body in it link : `https://localhost:8000/api/users`
+
+
+Request body example : 
+    
+    {
+        "users": [
+            {
+                "first_name": "Tom",
+                "last_name": "Hardy"
+            },
+            {
+                "first_name": "Tom",
+                "last_name": "Gnarly"
+            }
+        ]
+    }
 
 Have fun!
