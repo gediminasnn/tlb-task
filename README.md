@@ -1,6 +1,5 @@
 # tlb-task
 Simple `/api/users` POST endpoint made for a job interview.
-
 ## Setup
 
 Considering you already downloaded the code you must follow these steps:
