@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13388540-1fbb-419b-a8e4-1a81e5a2a058" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,9 +100,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tlb-task-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Darbas/Laravel/WMS-SKU-Service" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -143,6 +144,13 @@
       <workItem from="1610735583459" duration="7958000" />
       <workItem from="1610743674484" duration="1073000" />
       <workItem from="1610744836892" duration="810000" />
+      <workItem from="1610927458765" duration="216000" />
+      <workItem from="1610969382245" duration="679000" />
+      <workItem from="1610970690487" duration="599000" />
+      <workItem from="1610991269803" duration="1347000" />
+      <workItem from="1611059534721" duration="922000" />
+      <workItem from="1611321499485" duration="808000" />
+      <workItem from="1611324558697" duration="16000" />
     </task>
     <servers />
   </component>
@@ -166,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610654389094" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610744847158">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611324573147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610744847158" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324573147" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610738980502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -190,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="706" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610716384233" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1610654218003">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1610970681367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610654218003" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610970681367" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610705950746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

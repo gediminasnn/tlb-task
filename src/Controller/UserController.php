@@ -18,10 +18,10 @@ class UserController extends AbstractController
     {
         $users = $request->toArray()['users'];//request body
         $usersArray = array('users'=>array());//response body
-//        $api_key = "d195e8fb160ff29935bce1fe6772253b18ac92d6b74f1f7407c8cbafbf439d3e";
+
         $api_key = $request->headers->get('api-key');
 
-        if($api_key && hash('sha256', 'priimkitmaneidarba') === $api_key){
+        if($api_key && hash('sha256', 'awef') === $api_key){
 
             foreach($users as $user){
                 $newUser = new User();
