@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
+use App\Services\ApiKeyAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,32 +16,43 @@ class UserController extends AbstractController
      */
     public function post(Request $request): Response
     {
-        $users = $request->toArray()['users'];//request body
-        $usersArray = array('users'=>array());//response body
+        $apiKey = $request->headers->get('apiKey');//Get apiKey from headers
 
-        $api_key = $request->headers->get('api-key');
-
-        if($api_key && hash('sha256', 'awef') === $api_key){
-
-            foreach($users as $user){
-                $newUser = new User();
-                $newUser->setFirstName($user['first_name']);
-                $newUser->setLastName($user['last_name']);
-                $newUser->getFullName();
-                array_push($usersArray['users'], $newUser);
-            }
-
-            return new Response(
-                json_encode($usersArray),
-                JsonResponse::HTTP_CREATED
+        //Authentication
+        //Does apiKey exist
+        if(!$apiKey)
+        {
+            return new Response( //Returning response with empty apiKey message
+                "Api Key is empty",
+                Response::HTTP_BAD_REQUEST
             );
         }
-        else {
-            return new JsonResponse(
-                ["Message" => "Api_key 'd195e8fb160ff29935bce1fe6772253b18ac92d6b74f1f7407c8cbafbf439d3e' is either incorrect or empty"],
-                JsonResponse::HTTP_UNAUTHORIZED
+        //Does apiKey matches with original apiKey
+        else if (hash('sha256', 'priimkitmaneidarba') !== $apiKey)
+        {
+            return new Response(                        //Returning response with incorrect apiKey message
+                "Api Key '{$apiKey}' is incorrect",
+                Response::HTTP_BAD_REQUEST
             );
         }
+
+        //Fetching request body and instantiating response body
+        $users = $request->toArray()['users'];          //Fetched request body into array TODO : use other methods
+        $usersArray = array('users'=>array());          //Instantiated response body TODO : use other methods
+
+        //Looping through request array
+        foreach($users as $user){                       // Loops over all given users
+            $newUser = new User();                      // Instantiate User object
+            $newUser->setFirstName($user['first_name']);// Setting firstname
+            $newUser->setLastName($user['last_name']);  // Setting lastname
+            $newUser->getFullName();                    // Setting full name
+            $usersArray['users'][] = $newUser;          // Pushing complete user into array
+        }
+
+        return new Response(
+            json_encode($usersArray),                   //transforming array into json
+            Response::HTTP_CREATED
+        );
 
     }
 }
